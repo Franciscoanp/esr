@@ -10,19 +10,17 @@ import com.algaworks.algafood.di.service.AtivacaoClienteService;
 @RestController
 public class MeuPrimeiroController {
 
-	private AtivacaoClienteService service;
+	private AtivacaoClienteService ativacaoClienteService;
 	
 	public MeuPrimeiroController(AtivacaoClienteService service) {
-		this.service = service;
-		
-		System.out.println("MeuPrimeiroController: " + service);
+		this.ativacaoClienteService = service;
 	}
 
 	@GetMapping("/hello")
 	@ResponseBody
 	public String hello() {
 		Cliente joao = new Cliente("joao", "joao@gmail.com", "99999990");
-		service.ativar(joao);
+		ativacaoClienteService.ativar(joao);
 		return "asdasdasd!";
 	}
 }

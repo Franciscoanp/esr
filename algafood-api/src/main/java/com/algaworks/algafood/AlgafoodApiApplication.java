@@ -10,7 +10,7 @@ public class AlgafoodApiApplication {
 		SpringApplication.run(AlgafoodApiApplication.class, args);
 		
 		System.out.println("**********************************");
-		System.out.println("*    Inicializando projeto...    *");
+		System.out.println("*    Projeto iniciado...    *");
 		System.out.println("**********************************");
 	}
 
